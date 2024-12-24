@@ -2,6 +2,7 @@ import os
 import sys
 import shutil
 import filecmp
+from pathlib import Path
 from tkinter import *
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
