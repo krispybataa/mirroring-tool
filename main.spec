@@ -1,16 +1,42 @@
 # -*- mode: python ; coding: utf-8 -*-
+import os
 
+# Get the directory containing this spec file
+spec_dir = os.path.dirname(os.path.abspath(SPEC))
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=[spec_dir],
     binaries=[],
-    datas=[],
-    hiddenimports=[],
+    datas=[
+        ('resoources', 'resources'),  # Include resources directory
+    ],
+    hiddenimports=[
+        'tkinter',
+        'tkinter.ttk',
+        'tkinter.filedialog',
+        'tkinter.messagebox',
+        'json',
+        'pathlib',
+        'filecmp',
+        'shutil',
+    ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=[],
+    excludes=[
+        'matplotlib',
+        'numpy',
+        'pandas',
+        'scipy',
+        'PIL',
+        'cv2',
+        'requests',
+        'urllib3',
+        'certifi',
+        'charset_normalizer',
+        'idna',
+    ],
     noarchive=False,
     optimize=0,
 )
@@ -22,7 +48,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='ARMR_Briefcase',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -35,4 +61,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='resoources/app_icon_final.ico',  # Set the application icon
 )

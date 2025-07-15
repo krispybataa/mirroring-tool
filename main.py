@@ -10,7 +10,17 @@ import json
 from styles import apply_modern_style, COLORS, create_title_label, create_button
 
 # Constants
-ICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'resources', 'app_icon_final.ico'))
+def get_resource_path(relative_path):
+    """Get absolute path to resource, works for dev and for PyInstaller"""
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS  # type: ignore
+    except Exception:
+        base_path = os.path.abspath(".")
+    
+    return os.path.join(base_path, relative_path)
+
+ICON_PATH = get_resource_path(os.path.join('resources', 'app_icon_final.ico'))
 CONFIG_FILE = 'directory_config.json'
 
 class ProgressWindow:
@@ -103,8 +113,6 @@ def select_directory(prompt, initial_dir=None):
 def sync_folders(source, destination):
     if not os.path.exists(source):
         raise FileNotFoundError(f"Source directory not found: {source}")
-    if not os.path.exists(destination):
-        raise FileNotFoundError(f"Destination directory not found: {destination}")
 
     # Create progress window
     progress = ProgressWindow()

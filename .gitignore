@@ -55,3 +55,11 @@ Thumbs.db
 # Custom project directories
 resoources/
 test_home_dir/
+
+# Test reports and artifacts
+test_report_*.json
+htmlcov/
+
+# Distribution packages
+ARMR_*_Distribution/
+ARMR_Briefcase/

@@ -3,7 +3,23 @@
 # For building executable files
 pyinstaller>=5.0.0
 
-# No additional external dependencies required
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+coverage>=7.0.0
+
+# Code quality and linting (optional)
+flake8>=6.0.0
+black>=23.0.0
+isort>=5.12.0
+
+# Type checking (optional)
+mypy>=1.0.0
+
+# Performance testing (optional)
+pytest-benchmark>=4.0.0
+
+# No additional external dependencies required for core functionality
 # This project uses only Python standard library modules:
 # - os, sys, shutil, filecmp, pathlib, json
 # - tkinter (GUI framework)
