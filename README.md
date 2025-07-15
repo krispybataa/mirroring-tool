@@ -15,7 +15,7 @@ This tool allows you to mirror files from one drive to another drive.
 
 ## Details
 
-- Made by Clark Rodriguez in Windsurf IDE
+- Made by Clark Rodriguez 
 - Made in Python 3.11
 - Uses tkinter for GUI
 - Uses shutil for file operations

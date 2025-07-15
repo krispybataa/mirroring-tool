@@ -1,0 +1,9 @@
+# Drive Mirroring Tool Dependencies
+
+# For building executable files
+pyinstaller>=5.0.0
+
+# No additional external dependencies required
+# This project uses only Python standard library modules:
+# - os, sys, shutil, filecmp, pathlib, json
+# - tkinter (GUI framework)
