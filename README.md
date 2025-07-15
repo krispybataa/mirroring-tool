@@ -15,13 +15,13 @@ A professional file synchronization tool designed to help users sync files betwe
 
 ## Quick Start
 
-### For End Users
+<!-- ### For End Users
 1. Download the `ARMR_Briefcase_Distribution/` folder
 2. Double-click `ARMR_Briefcase.exe` to start
 3. Choose your sync mode (Work or Home)
 4. Select your directories when prompted
 5. Confirm the sync operation
-6. Wait for completion
+6. Wait for completion -->
 
 ### For Developers
 1. Clone the repository
@@ -125,8 +125,8 @@ The application is distributed as a single executable file with all dependencies
 3. **"Sync Fails"**: Check available disk space
 4. **"Application Won't Start"**: Check antivirus exclusions
 
-### Support
-For technical support or feature requests, contact your IT department or the development team.
+<!-- ### Support
+For technical support or feature requests, contact your IT department or the development team. -->
 
 ## Version History
 
