@@ -134,11 +134,11 @@ For technical support or feature requests, contact your IT department or the dev
 - **v1.1**: Added progress tracking and configuration persistence
 - **v1.2**: Improved error handling and user interface
 
-## License
+<!-- ## License
 
 This software is proprietary and confidential. Unauthorized distribution is prohibited.
 
----
+--- -->
 
 **Developed by**: Clark Rodriguez  
 **Last Updated**: 2024  
